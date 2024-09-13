@@ -1,0 +1,256 @@
+
+body
+{
+    background-color: #242424;
+    
+}
+.container 
+{
+    text-align: center;
+    position:relative;   
+    /* overflow:hidden;  */
+    height: 100vh;
+}
+h1
+{
+    margin:4rem 0 1rem 0;
+    font-weight: bolder;
+    font-family: 'Bungee Shade', sans-serif;
+    letter-spacing: 0.3rem;
+    font-size:50px;
+    position:relative;
+}
+.first
+{
+    color: rgb(0, 255, 247);
+    animation:up-down 3s infinite;
+    
+}
+.second 
+{
+   color:white;
+   animation:scaling 3s infinite;
+}
+/* animate */
+@keyframes up-down {
+    0%{transform:scale(1.3)}
+    20%{tranform:scale(1.1)}
+    40%{transform:scale(1.3)}
+    60%{transform:scale(1)}
+    80%{tranform:scale(1.1)}
+    100%{transform:scale(1.3)}
+  }
+@keyframes scaling {
+    0%{transform:scale(1.3)}
+    20%{tranform:scale(1.1)}
+    40%{transform:scale(1.3)}
+    60%{transform:scale(1)}
+    80%{tranform:scale(1.1)}
+    100%{transform:scale(1.3)}
+    
+}
+/* ballons section */
+.ballons 
+{
+    height:100%;
+    /* background-color: red; */
+    position:relative;
+}
+.ballons .stars
+{
+    width:10px;
+    height: 10px;
+    background-color: white;
+    box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;  
+
+  
+    position:relative;
+    border-radius:50%;
+    margin:40px;
+    animation:animate 7s infinite;
+   
+}
+.ballons .star1 
+{
+    /* position:absolute; */
+    left:100px;
+    top:0px;
+}
+.ballons .star2 
+{
+    /* position: absolute; */
+    left:300px;
+    top:0px;
+}
+.ballons .star3 
+{
+    /* position: absolute; */
+    left:500px;
+    top:0px;
+}
+.ballons .star4 
+{
+    /* position: absolute; */
+    left:700px;
+    top:0px;
+}
+.ballons .star5 
+{
+    /* position: absolute; */
+    left:900px;
+    top:0px;
+}
+.ballons .star6 
+{
+    /* position: absolute; */
+    left:200px;
+    top:100px;
+}
+.ballons .star7 
+{
+    /* position: absolute; */
+    left:400px;
+    top:100px;
+}
+.ballons .star8 
+{
+    /* position: absolute; */
+    left:600px;
+    top:100px;
+}
+.ballons .star9
+{
+    /* position: absolute; */
+    left:800px;
+    top:100px;
+}
+.ballons .star10 
+{
+    /* position: absolute; */
+    left:25px;
+    top:200px;
+    
+}
+.ballons .star11
+{
+    /* position: absolute; */
+    left:300px;
+    top:200px;
+    
+}
+.ballons .star12
+{
+    /* position: absolute; */
+    left:500px;
+    top:200px;
+   
+}
+.ballons .star13
+{
+    /* position: absolute; */
+    left:700px;
+    top:200px;
+   
+}
+.ballons .star12
+{
+    /* position: absolute; */
+    left:980px;
+    top:200px;
+    
+}
+.ballons .star13
+{
+    /* position: absolute; */
+    left:150px;
+    top:300px;
+    
+}
+.ballons .star14
+{
+    /* position: absolute; */
+    left:500px;
+    top:300px;
+    
+}
+.ballons .star15
+{
+    /* position: absolute; */
+    left:700px;
+    top:300px;
+   
+}
+.ballons .star16
+{
+    /* position: absolute; */
+    left:900px;
+    top:300px;
+   
+}
+.ballons .star17
+{
+    /* position: absolute; */
+    left:380px;
+    top:320px;
+    
+}
+.ballons .star18
+{
+    /* position: absolute; */
+    left:580px;
+    top:220px;
+    
+}
+.ballons .star18
+{
+    /* position: absolute; */
+    left:100px;
+    top:150px;
+    
+}
+.ballons .star18
+{
+    /* position: absolute; */
+    left:600px;
+    top:220px;
+    
+}
+.ballons .star19
+{
+    /* position: absolute; */
+    left:80px;
+    top:350px;
+    
+}
+.ballons .star20
+{
+    /* position: absolute; */
+    left:50px;
+    top:80px;
+    
+}
+@keyframes animate {
+  /* 0%{top:-10px;}
+  10%{top:-50px;}
+  20%{top:-100px;}
+  30%{top:-150px;}
+  40%{top:-200px;}
+  50%{top:-250px;}
+  60%{top:-300px;}
+  70%{top:-350px;}
+  80%{top:-400px;}
+  90%{top:-450px;}
+  100%{top:-500px;} */
+  from {transform: translateY(50vh);
+    opacity: 1;}
+    to {transform: translateY(-150vh);
+    opacity: 0;}
+}

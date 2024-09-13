@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body
+    {
+      text-align:center;
+    }
+    div 
+    {
+      width:500px;
+      height: 150px;
+      border:2px solid black;
+      margin:auto;
+    }
+    button 
+    {
+      padding: 10px 15px;
+      border-radius:10px; 
+      font-size:20px;
+      border:none;
+      color:rgb(220, 47, 47);
+      background:radial-gradient(closest-corner,orange,white,green);
+    }
+    button:hover 
+    {
+      cursor:pointer;
+    }
+    button:active 
+    {
+      transform:translateY(2px);
+    }
+  </style>
+</head>
+<body>
+    <h1>New Color here</h1><br>
+    <button class="btn btn-gradient-border btn-glow">Generate New Color</button><br><br>
+   <script>
+     document.querySelector("button").addEventListener("click",function() {
+         let randomColor=getRandomColor();
+         document.querySelector("h1").innerText=randomColor;
+         document.querySelector("body").style.backgroundColor=randomColor;
+
+     });
+     function getRandomColor() {
+      let red=Math.floor(Math.random()*255);
+      let green=Math.floor(Math.random()*255);
+      let blue=Math.floor(Math.random()*255);
+      let newColor=`rgb(${red},${green},${blue})`;
+      return newColor;
+     }
+     
+   </script>
+</body>
+</html>

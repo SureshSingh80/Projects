@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="bootstrap.css">
+  <style>
+     #container
+     {
+       width:800px;
+       height: 650px;
+       border:none;
+       border-radius:10px;
+       padding:10px 15px;
+       margin:  25% 25%;
+       background-color: rgb(195, 184, 31);
+       display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(4,1fr);
+       
+     }
+     .boxes
+     {
+      width:auto;
+      height: 40px;
+      margin:10px 10px  0px 15px;
+      padding:5px;
+     }
+     .zero-zero
+     {
+      /* background-color: blue; */
+
+     }
+     input,select
+     {
+      width:100%;
+      margin:10px;
+     }
+     label
+     {
+       margin: 10px;
+     }
+    .submit-grid
+     {
+       /* merging two column */
+       grid-column:1/span 2;
+       height: 50px;
+       border-radius:2rem;
+       border:none;
+     }
+     .tablet-distribution
+     {
+      grid-column:1/span 2;
+     
+     }
+     /* to make responsive */
+     @media (max-width:1085px) {
+         #container
+         {
+          width:600px;
+          /* height: 450px; */
+         }
+     }
+     @media (max-width:870px) {
+      #container
+         {
+            width:400px;
+            height:850px;
+            display:flex;
+            flex-direction: column;
+            
+         }
+      .boxes
+      {
+         height:auto;
+      }
+
+     }
+  </style>
+   
+</head>
+<body>
+  
+<form action="">
+  <div id="container">
+     <div class="tablet-distribution">
+      <h2><marquee behavior="alternate" direction="to-right">Tablet Distribution in TERI PG College</marquee></h2>
+    </div>
+    <div class="zero-zero boxes">
+      <label for="name">Enter your name</label><br><input type="text" id="name" placeholder="Name"  class="form-control">
+    </div>
+    <div class="zero-one boxes">
+       <label for="enroll">Enter your Enrollment number</label><input type="text" id="enroll" placeholder="Enrollment number" class="input form-control">
+    </div>
+
+    <div class="one-zero boxes">
+      <label for="name">Enter your Father name</label><input type="text" id="name" placeholder="Father name"  class="form-control">
+    </div>
+    <div class="one-one boxes"  >
+      <label for="enroll">Enter Your Aadhar number</label><input type="text" id="enroll" placeholder="Aadhar number"  class="form-control">
+    </div>
+     
+    
+
+    <div class="two-zero boxes">
+      <label for="class">Choose class</label>
+      <select name="classes" id="class"  class="form-control">
+        <option value="select">----Select----</option>
+        <option value="BCA">BCA</option>
+        <option value="BBA">BBA</option>
+        <option value="MBA">MBA</option>
+        <option value="MCA">MCA</option>
+      </select>
+    </div>
+    <div class="two-one boxes">
+      <label for="year">Choose Year</label>
+      <select name="Years" id="year" class="form-control">
+        <option value="select">----Select----</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+      <button class="submit-grid btn btn-info">Register</button>
+
+  </div>
+</form>
+</body>
+</html>
